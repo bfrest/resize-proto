@@ -1,0 +1,17 @@
+.child1 {
+  resize: both;
+  background: black;
+  color: white;
+  height: 300px;
+  width: 600px;
+  overflow: hidden;
+  position: fixed;
+  left: 50px;
+  bottom: 200px;
+  transition: all 0.1s linear;
+}
+
+.orange {
+  background: orange;
+  border-radius: 15px;
+}
