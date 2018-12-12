@@ -25,6 +25,11 @@ class Child1 extends Component {
     }
     return (
       <div className="child1" ref={this.childRef}>
+        {/* This is the react-resize-observer, 
+        you can put an inline function that runs every time
+        the component is resized like I have below.
+        and you can get your values from passing the rect.
+        */}
         <ResizeObserver
           onResize={rect => {
             this.setState({
@@ -37,6 +42,7 @@ class Child1 extends Component {
         <h1>{`Parent height: ${this.props.dimensions.parentHeight}`}</h1>
         <h1>{`My width ${this.state.myWidth}`}</h1>
         <h1>{`My height ${this.state.myHeight}`}</h1>
+        <p>I'm the child Component, resize me below 400px</p>
       </div>
     );
   }
